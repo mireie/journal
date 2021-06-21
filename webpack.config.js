@@ -9,14 +9,14 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   devtool: 'eval-source-map',
-  devServer: {
-    contentBase: './dist'
+  devServer: {               
+    contentBase: './dist'    
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Journal',
-      tempalte: './src/index.html',
+      template: './src/index.html',
       inject: 'body'
     })
   ],

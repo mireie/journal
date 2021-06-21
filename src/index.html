@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="text/javascript" src="bundle.js"></script>
-  </head>
+
+<head></head>
+</head>
+
 <body>
-  <p>Howdy.</p>
+  <div class="container">
+    <h2>Submit a post </h2>
+    <div class="m-1 row">
+      <form id="new-entry">
+        <div>
+          <label for="title">Title</label>
+          <input class="form-control" type="text" name="title-text" id="entry-title">
+        </div>
+        <div>
+          <label for="body">Body</label>
+          <textarea class="form-control" name="body-text" id="entry-body" rows="4" cols="50"></textarea>
+        </div>
+        <button class="btn btn-primary mt-3" type="submit">Submit</button>
+      </form>
+    </div>
+    <h2>Posts</h2>
+    <div id="results" class="row">
+    </div>
+  </div>
 </body>
+
 </html>
