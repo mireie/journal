@@ -72,7 +72,13 @@ Entry.prototype.countCons = function () {
 Entry.prototype.getTeaser = function () {
   let teaserArray = [];
   const bodyArray = this.body.split(" ");
-  for (let i=0; i < 8; i++) {
+  let teaserLength = 0;
+  if (bodyArray.length > 8) {
+    taserLength = 8;
+  } else {
+    teaserLength = bodyArray.length;
+  }
+  for (let i=0; i < teaserLength; i++) {
     teaserArray.push(bodyArray[i]);
     if (bodyArray[i].includes(".")) {
       return teaserArray.join(" ");
